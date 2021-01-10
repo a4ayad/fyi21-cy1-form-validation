@@ -2,19 +2,23 @@
 const form = document.getElementById('registration-form')
 
 const username = document.getElementById('username')
-const email = document.getElementById('email')
+const email    = document.getElementById('email')
+const password = document.getElementById('password')
+const password2 = document.getElementById('password-2')
 
 // adding event listener on the form
 form.addEventListener('submit', function (e) {
   e.preventDefault()
 
   validateEmpty(username)
+  // validateMinLength(username)
+  // validateMinLength(username)
   validateEmpty(email)
-  // validateMinLength(username)
-  // validateMinLength(username)
-  //validateEmpty(password)
+  validateEmpty(password)
+  validateEmpty(password2)
   // validateFirstName(firstName)
   // validateIsEmail(email)
+
 
   //@TODO: add the validation for email (Code Challenge 5a)
   //@TODO: Code Challenge 5b: Refactor your CC 5a to use function with the "blueprints" below
