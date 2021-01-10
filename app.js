@@ -4,7 +4,7 @@ const form = document.getElementById('registration-form')
 const username = document.getElementById('username')
 const email    = document.getElementById('email')
 const password = document.getElementById('password')
-const password2 = document.getElementById('password-2')
+const password2 = document.getElementById('password2')
 
 // adding event listener on the form
 form.addEventListener('submit', function (e) {
